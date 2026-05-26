@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Citroën - El Desafío</title>
+  <title>Fiat - El Desafío</title>
   <link rel="preload" href="arquerop.png" as="image">
   <link rel="preload" href="arqueroi.png" as="image">
   <link rel="preload" href="arquerod.png" as="image">
   <link rel="preload" href="cancha.avif" as="image" type="image/avif">
   <link rel="preload" href="pelota.avif" as="image" type="image/avif">
   <style>
-    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Regular.ttf');    font-weight: 400; font-style: normal; }
-    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Bold.ttf');       font-weight: 700; font-style: normal; }
-    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Black.ttf');      font-weight: 900; font-style: normal; }
-    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Light.ttf');      font-weight: 300; font-style: normal; }
-    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-ExtraLight.ttf'); font-weight: 200; font-style: normal; }
+    @font-face { font-family: 'FiatType'; src: url('Fonts/FuturaPTLight.otf');       font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'FiatType'; src: url('Fonts/Futura Std Book 2.otf');   font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'FiatType'; src: url('Fonts/FuturaPTMedium.otf');      font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'FiatType'; src: url('Fonts/FuturaPTBold.otf');        font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'FiatType'; src: url('Fonts/FuturaStd-Bold.otf');      font-weight: 900; font-style: normal; }
   </style>
   <style>
 :root {
-  --negro: #000000;
+  --negro: #18131f;
   --blanco: #FFFFFF;
   --gris-medio: #888888;
   --glow-color: rgba(255,255,255,0.9);
@@ -30,7 +30,7 @@
 body {
   background: var(--negro);
   color: var(--blanco);
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   height: 100vh;
   overflow: hidden;
 }
@@ -233,7 +233,7 @@ body {
 .titulo-overlay h1 {
   font-size: 34px;
   font-weight: 900;
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   letter-spacing: 1px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -348,8 +348,8 @@ body {
   width: 220px;
   height: 220px;
   background: radial-gradient(ellipse at 50% 50%,
-    rgba(218,41,28,0.65) 0%,
-    rgba(218,41,28,0.28) 38%,
+    rgba(59,54,158,0.65) 0%,
+    rgba(59,54,158,0.28) 38%,
     transparent 68%
   );
   pointer-events: none;
@@ -358,15 +358,13 @@ body {
 .cartel-icono img {
   width: 130px;
   height: auto;
-  filter: invert(1);
-  mix-blend-mode: screen;
   position: relative;
 }
 
 .cartel-texto {
   font-size: 44px;
   font-weight: 900;
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
@@ -380,7 +378,7 @@ body {
   margin-top: 12px;
   font-size: 13px;
   font-weight: 300;
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.80);
@@ -395,7 +393,7 @@ body {
   border: 0.5px solid rgba(255,255,255,0.18);
   border-radius: 6px;
   padding: 6px 18px;
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -453,7 +451,7 @@ body {
   transform: translateX(-50%);
   font-size: 11px;
   font-weight: 700;
-  font-family: 'CitroenType', sans-serif;
+  font-family: 'FiatType', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.5);
@@ -718,22 +716,22 @@ body {
     document.querySelector('.titulo-overlay').style.opacity = '0';
     document.querySelector('.titulo-overlay').style.transition = 'opacity 0.3s';
 
-    const logoHTML = '<img src="Citroen-Logo.png" alt="Citroën"/>';
+    const logoHTML = '<img src="fiat-logo.png" alt="Citroën"/>';
 
     if (esGol) {
       iconoEl.innerHTML   = logoHTML;
       textoEl.textContent = '¡GOL!';
       subEl.innerHTML     = 'Ganaste doble chance<br/>al premio final';
       badgeEl.innerHTML   = '';
-      cartelito.style.setProperty('--glow-color', 'rgba(255,255,255,0.9)');
-      cartelito.style.setProperty('--glow-faded', 'rgba(255,255,255,0.3)');
+      cartelito.style.setProperty('--glow-color', 'rgba(59,54,158,0.95)');
+      cartelito.style.setProperty('--glow-faded', 'rgba(59,54,158,0.35)');
     } else {
       iconoEl.innerHTML   = logoHTML;
       textoEl.textContent = '¡ATAJADA!';
       subEl.textContent   = 'Participás igual del sorteo final.';
       badgeEl.innerHTML   = '';
-      cartelito.style.setProperty('--glow-color', 'rgba(255,255,255,0.9)');
-      cartelito.style.setProperty('--glow-faded', 'rgba(255,255,255,0.3)');
+      cartelito.style.setProperty('--glow-color', 'rgba(59,54,158,0.7)');
+      cartelito.style.setProperty('--glow-faded', 'rgba(59,54,158,0.2)');
     }
 
     cartelito.style.animation = 'none';
