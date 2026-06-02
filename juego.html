@@ -425,6 +425,32 @@ body {
          box-shadow: 0 0 18px var(--glow-faded); }
 }
 
+/* BOTÓN VOLVER AL INICIO */
+.btn-inicio {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  background: linear-gradient(160deg, rgba(255,255,255,0.96) 0%, rgba(215,215,215,0.9) 100%);
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-family: 'FiatType', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.btn-inicio.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.btn-inicio:active { transform: scale(0.97); opacity: 0.82; }
+
 /* SWIPE HINT */
 @keyframes pulseRing {
   0%   { transform: translate(-50%, -50%) scale(0.85); opacity: 0.7; }
@@ -529,6 +555,7 @@ body {
     <div class="cartel-texto" id="cartelTexto"></div>
     <div class="cartel-sub"   id="cartelSub"></div>
     <div id="cartelBadge"></div>
+    <button class="btn-inicio" id="btnInicio" onclick="window.location.href='index.html'">Volver al inicio</button>
   </div>
 </div>
 
@@ -738,6 +765,11 @@ body {
     cartelito.style.opacity   = '0';
     cartelito.offsetHeight;
     cartelito.style.animation = 'iluminarCartel 0.6s ease-out forwards';
+
+    // Mostrar botón volver al inicio después de la animación
+    const btnInicio = document.getElementById('btnInicio');
+    btnInicio.classList.remove('visible');
+    setTimeout(() => btnInicio.classList.add('visible'), 1000);
 
     // Freeze everything — no more interaction possible
     document.querySelector('.cancha').style.pointerEvents = 'none';
