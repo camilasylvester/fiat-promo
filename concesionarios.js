@@ -267,9 +267,6 @@ const CONCESIONARIOS = {
     "Rafaela": [
       { nombre: "Valmotors", direccion: "Conscripto Zurbriggen 667 – Ruta 34 Km 222" }
     ],
-    "Reconquista": [
-      { nombre: "Taller Trosch Autos", direccion: "Hipólito Irigoyen 762" }
-    ],
     "Rosario": [
       { nombre: "Avec", direccion: "Necochea 2601" },
       { nombre: "Seprio", direccion: "Liniers 670" }
