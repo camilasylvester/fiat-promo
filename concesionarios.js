@@ -174,7 +174,7 @@ const CONCESIONARIOS = {
       { nombre: "Full Car", direccion: "Av. Eva Perón 2508" }
     ],
     "Concepción del Uruguay": [
-      { nombre: "Celia Torra 31", direccion: "Celia Torra 31" }
+      { nombre: "Servicio Mecánico Richard", direccion: "Celia Torra 31" }
     ],
     "Gualeguaychú": [
       { nombre: "Romani", direccion: "3 de Caballería 426" }
