@@ -140,6 +140,7 @@ const CONCESIONARIOS = {
   },
   "Córdoba": {
     "Córdoba": [
+      { nombre: "F.L.G.", direccion: "Córdoba 644" },
       { nombre: "Montironi", direccion: "Monseñor Pablo Cabrera 4935" },
       { nombre: "Motcor", direccion: "Av. Santa Ana 6569" },
       { nombre: "Turin", direccion: "Av. Fuerza Aerea Argentina 3808" }
