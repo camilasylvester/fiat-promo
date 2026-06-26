@@ -185,7 +185,7 @@ const CONCESIONARIOS = {
   },
   "Formosa": {
     "Formosa": [
-      { nombre: "ZL Auto", direccion: "Sarmiento 645" }
+      { nombre: "MAPIC S.A.", direccion: "Sarmiento 645" }
     ]
   },
   "Jujuy": {
@@ -285,10 +285,10 @@ const CONCESIONARIOS = {
   },
   "Tierra del Fuego": {
     "Río Grande": [
-      { nombre: "LASAC", direccion: "Av. General Don José de San Martín 2599" }
+      { nombre: "LIENDO", direccion: "Av. General Don José de San Martín 2599" }
     ],
     "Ushuaia": [
-      { nombre: "LASAC", direccion: "Av. Piedrabuena 256" }
+      { nombre: "LIENDO", direccion: "Av. Piedrabuena 256" }
     ]
   },
   "Tucumán": {
