@@ -299,6 +299,7 @@ const CONCESIONARIOS = {
       { nombre: "Fadua", direccion: "Stewart Shipton 1585" }
     ],
     "San Miguel de Tucumán": [
+      { nombre: "Fadua Tucumán", direccion: "Av. Roca 2653" },
       { nombre: "Piazza — Don Bosco 2519/2525", direccion: "Don Bosco 2519/2525" },
       { nombre: "Piazza — Don Bosco 2537", direccion: "Don Bosco 2537" }
     ]
