@@ -400,6 +400,16 @@
     </div>
 
     <div class="error-msg" id="err1"></div>
+
+    <div style="margin-top:32px;">
+      <button class="btn-siguiente" onclick="irPaso2()">Continuar</button>
+      <div class="privacy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M12 2L3 7v5c0 5 4 9.3 9 10.3C17 21.3 21 17 21 12V7L12 2z"/>
+        </svg>
+        Tu información está protegida.
+      </div>
+    </div>
   </div>
 
   <!-- ── PASO 2 ── -->
@@ -442,15 +452,7 @@
   </div>
 
   <!-- FOOTERS fijos -->
-  <div class="footer-fixed" id="footerStep1">
-    <button class="btn-siguiente" onclick="irPaso2()">Continuar</button>
-    <div class="privacy">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <path d="M12 2L3 7v5c0 5 4 9.3 9 10.3C17 21.3 21 17 21 12V7L12 2z"/>
-      </svg>
-      Tu información está protegida.
-    </div>
-  </div>
+  <div class="footer-fixed" id="footerStep1" style="display:none;"></div>
   <div class="footer-fixed" id="footerStep2" style="display:none;">
     <button class="btn-siguiente" onclick="irPaso3()">Continuar</button>
     <div class="privacy">
